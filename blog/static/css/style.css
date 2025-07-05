@@ -1,0 +1,24 @@
+.skill-icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.skills-scroll {
+  display: flex;
+  animation: scroll-left 25s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
